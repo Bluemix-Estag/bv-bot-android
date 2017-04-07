@@ -21,17 +21,17 @@ Um app nativo de Android para interagir com o chatbot integrado no app [Cloud In
 
 ## Rodando a aplicação no emulador de Android
 
-1. O app depende do [App do Bot de Cloud Insurance](https://github.com/IBM-Bluemix/insurance-bot). Certifique-se de enviá-lo ao Bluemix primeiro. O caminho simples do envio é usar a [Toolchain de cloud insurance](https://github.com/IBM-Bluemix/insurance-toolchain).
+1. O app depende do [App do Bot de Cloud Insurance](https://github.com/carlosbu/insurance-bot). Certifique-se de enviá-lo ao Bluemix primeiro. O caminho simples do envio é usar a [Toolchain de cloud insurance](https://github.com/carlosbu/insurance-toolchain).
 
 1. Confira se o Gradle está devidamente configurado em seu ambiente.
 
 1. Clone a aplicação para seu ambiente de trabalho pelo terminal de comandos usando o seguinte comando:
 
   ```
-  git clone https://github.com/IBM-Bluemix/insurance-bot.git
+  git clone https://github.com/carlosbu/insurance-bot.git
   ```
 
-* ou baixe e extraia o código fonte [deste arquivo](https://github.com/IBM-Bluemix/insurance-bot-android/archive/master.zip)
+* ou baixe e extraia o código fonte [deste arquivo](https://github.com/carlosbu/insurance-bot-android/archive/master.zip)
 
 1. Abra o Android Studio e selecione "Open an existing Android Studio Project". Navegue para a pasta insurance-bot-android e Clique OK.
 
