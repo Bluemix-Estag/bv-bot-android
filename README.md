@@ -1,12 +1,12 @@
-# Cloud Insurance Co. - Android client
+# Cloud Insurance Co. - Aplicação Android
 
 [![Build Status](https://travis-ci.org/IBM-Bluemix/insurance-bot-android.svg?branch=master)](https://travis-ci.org/IBM-Bluemix/insurance-bot-android)
 
-This service is part of the larger [Cloud Insurance Co.](https://github.com/IBM-Bluemix/cloudco-insurance) project.
+Esse repositório é parte do projeto maior [Cloud Insurance Co.](https://github.com/IBM-Bluemix/cloudco-insurance).
 
-# Overview
+# Visão Geral
 
-A native android app to interact with the chat bot integrated in the [Cloud Insurance Co.](https://github.com/IBM-Bluemix/cloudco-insurance) application.
+Um app nativo de Android para interagir com o chatbot integrado no app [Cloud Insurance Co.](https://github.com/IBM-Bluemix/cloudco-insurance).
 
 <p align="center"><img src="images/login.png" width="200"/>
 <img src="images/home.png" width="200"/>
@@ -14,33 +14,33 @@ A native android app to interact with the chat bot integrated in the [Cloud Insu
 </p>
 
 
-## Application Requirements
+## Requisitos da aplicação
 
-* Android Studio 2.2.1 and above, Android 6.0 and Above (API Level 23+)
+* Android Studio 2.2.1 ou superior, Android 6.0 ou superior (API do android acima de 23)
 * Gradle
 
-## Running the application with the Android emulator
+## Rodando a aplicação no emulador de Android
 
-1. The android app depends on the [Cloud Insurance Bot app](https://github.com/IBM-Bluemix/insurance-bot). Make sure to deploy this app first. The simpler path to deploy this app is to use the [Cloud Insurance toolchain](https://github.com/IBM-Bluemix/insurance-toolchain).
+1. O app depende do [App do Bot de Cloud Insurance](https://github.com/IBM-Bluemix/insurance-bot). Certifique-se de enviá-lo ao Bluemix primeiro. O caminho simples do envio é usar a [Toolchain de cloud insurance](https://github.com/IBM-Bluemix/insurance-toolchain).
 
-1. Ensure Gradle is properly setup in your environment.
+1. Confira se o Gradle está devidamente configurado em seu ambiente.
 
-1. Clone the app to your local environment from your terminal or command prompt(on windows) using the following command:
+1. Clone a aplicação para seu ambiente de trabalho pelo terminal de comandos usando o seguinte comando:
 
   ```
-  git clone https://github.com/IBM-Bluemix/insurance-bot-android.git
+  git clone https://github.com/IBM-Bluemix/insurance-bot.git
   ```
 
-  * or Download and extract the source code from [this archive](https://github.com/IBM-Bluemix/insurance-bot-android/archive/master.zip)
+* ou baixe e extraia o código fonte [deste arquivo](https://github.com/IBM-Bluemix/insurance-bot-android/archive/master.zip)
 
-1. Launch Android Studio and Select "Open an existing Android Studio Project". Navigate to insurance-bot-android folder and Click OK.
+1. Abra o Android Studio e selecione "Open an existing Android Studio Project". Navegue para a pasta insurance-bot-android e Clique OK.
 
-1. Edit `/app/src/main/res/values/config.xml` and replace the `hosted_url` property with the location where you deployed the `insurance-bot` app.
+1. Edite `/app/src/main/res/values/config.xml` e substitua a propriedade `hosted_url` com o local no qual você publicou o app `insurance-bot`.
 
-1. Allow Gradle Sync and build to complete
+1. Permita a sincronização do Gradle Sync e sua compilação completar
 
-1. Run the app
+1. Execute o app
 
-## License
+## Licença
 
-See [License.txt](License.txt) for license information.
+Veja o [arquivo de licença](License.txt) para informação sobre a licença.
