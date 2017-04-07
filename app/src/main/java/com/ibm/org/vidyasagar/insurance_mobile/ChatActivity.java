@@ -58,7 +58,7 @@ public class ChatActivity  extends AppCompatActivity {
         //Setting the ActionBar.
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setTitle("Chat with Ana");
+        actionBar.setTitle("Conversa com a Ana");
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         bundle = getIntent().getExtras();
@@ -109,7 +109,7 @@ public class ChatActivity  extends AppCompatActivity {
 
         }
         else {
-            Toast.makeText(this, "Enter a request", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Digite sua mensagem aqui", Toast.LENGTH_LONG).show();
             this.initialRequest = false;
             return;
         }

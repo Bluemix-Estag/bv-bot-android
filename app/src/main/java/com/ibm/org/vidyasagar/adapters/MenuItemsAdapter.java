@@ -83,19 +83,19 @@ public class MenuItemsAdapter extends BaseAdapter {
     public List<MenuItem> getMenuItems() {
         ArrayList<MenuItem> items = new ArrayList<>();
         items.add(new MenuItem()
-                        .setLabel("HOME")
+                        .setLabel("CASA")
                         .setIcon(R.drawable.png_home2280)
         );
         items.add(new MenuItem()
-                        .setLabel("HEALTH")
+                        .setLabel("SAÚDE")
                         .setIcon(R.drawable.png_heart2570)
         );
         items.add(new MenuItem()
-                        .setLabel("AUTO")
+                        .setLabel("CARRO")
                         .setIcon(R.drawable.png_auo2321)
         );
         items.add(new MenuItem()
-                        .setLabel("TRAVEL")
+                        .setLabel("VIAGEM")
                         .setIcon(R.drawable.png_travel2458)
         );
         return items;

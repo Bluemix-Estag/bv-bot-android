@@ -99,7 +99,7 @@ public class LoginActivity extends AppCompatActivity {
         final ProgressDialog progressDialog = new ProgressDialog(LoginActivity.this,
                 R.style.AppTheme_Dark_Dialog);
         progressDialog.setIndeterminate(true);
-        progressDialog.setMessage("Authenticating...");
+        progressDialog.setMessage("Autenticando...");
         //progressDialog.getWindow().setGravity(Gravity.CENTER);
         progressDialog.show();
 
@@ -122,7 +122,7 @@ public class LoginActivity extends AppCompatActivity {
                     client.setRequestMethod("POST");
                     client.setInstanceFollowRedirects(false);
                     client.setDoOutput(true);
-
+                    
                     Log.d(TAG,"POSTResponseCode" + client.getResponseCode());
 
                     if (client.getResponseCode() == HttpURLConnection.HTTP_OK) {
@@ -210,7 +210,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void onLoginFailed() {
-        Toast.makeText(getBaseContext(), "Invalid username or password", Toast.LENGTH_LONG).show();
+        Toast.makeText(getBaseContext(), "E-mail ou senha inválido.", Toast.LENGTH_LONG).show();
         _loginButton.setEnabled(true);
     }
 
@@ -221,14 +221,14 @@ public class LoginActivity extends AppCompatActivity {
         String password = _passwordText.getText().toString();
 
         if (email.isEmpty() || !android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            _emailText.setError("Enter a valid email address");
+            _emailText.setError("Insira um e-mail válido");
             valid = false;
         } else {
             _emailText.setError(null);
         }
 
         if (password.isEmpty()) {
-            _passwordText.setError("Enter password");
+            _passwordText.setError("Insira a senha");
             valid = false;
         } else {
             _passwordText.setError(null);
