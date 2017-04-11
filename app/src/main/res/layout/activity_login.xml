@@ -29,8 +29,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
-                android:hint="E-MAIL"
-                android:text="ibm@ibm.com"/>
+                android:hint="E-MAIL" />
         </android.support.design.widget.TextInputLayout>
 
         <!-- Password Label -->
@@ -43,8 +42,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:hint="SENHA"
-                android:text="ibm123"/>
+                android:hint="SENHA" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.v7.widget.AppCompatButton
