@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Cloud Insurance Co</string>
+    <string name="app_name">BV Chatbot</string>
     <string name="no_items_found">Nenhum item encontrado</string>
     <string name="request_text">Digite sua mensagem aqui</string>
     <string name="button_send">Faça uma pergunta</string>

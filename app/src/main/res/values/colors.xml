@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#263238</color>
+    <color name="colorPrimaryDark">#9c0e31</color>
     <color name="colorAccent">#FF4081</color>
-        <color name="primary">#273D56</color>
+        <color name="primary">#9c0e31</color>
         <color name="primary_dark">#283593</color>
         <color name="primary_darker">#1A237E</color>
         <color name="accent">#FFFFFF</color>
@@ -23,7 +23,7 @@
     <color name="royalblue">#5888D4</color>
 
     <!--Chat bubble colors-->
-    <color name="bg_bubble_self">#98FB98</color>
+    <color name="bg_bubble_self">#E1B6C1</color>
     <color name="bg_bubble_watson">#44110f0f</color>
 
 </resources>

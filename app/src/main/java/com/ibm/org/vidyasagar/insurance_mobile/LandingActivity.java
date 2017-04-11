@@ -75,7 +75,7 @@ public class LandingActivity extends AppCompatActivity {
                 switch (position)
                 {
                     // Setting ChatActivity to Health in the gridview
-                    case 1:
+                    case 0:
                     {
                         Intent intent = new Intent(LandingActivity.this,ChatActivity.class);
                         Bundle bundle = new Bundle();

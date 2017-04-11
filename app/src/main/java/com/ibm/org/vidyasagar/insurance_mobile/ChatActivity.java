@@ -26,6 +26,7 @@ import com.ibm.org.vidyasagar.utils.PostOkHttp;
 
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -58,7 +59,7 @@ public class ChatActivity  extends AppCompatActivity {
         //Setting the ActionBar.
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setTitle("Conversa com a Ana");
+        actionBar.setTitle("BV Chatbot");
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         bundle = getIntent().getExtras();
@@ -141,7 +142,7 @@ public class ChatActivity  extends AppCompatActivity {
 
                     if(genericCheck.checkText(response)) {
                         ChatResponse gsonOutput = gson.fromJson(response, ChatResponse.class);
-                        Message outMessage=new Message();
+
                         //Watson Conversation Service Context to be added to the following request.
                         if (gsonOutput.getContext() != null) {
                             context =  new com.ibm.org.vidyasagar.models.Context();
@@ -149,11 +150,19 @@ public class ChatActivity  extends AppCompatActivity {
                             Log.i(TAG,gson.toJson(context));
                         }
 
-                        final String outputmessage = gsonOutput.getOutput().getText();
-                        outMessage.setMessage(outputmessage);
-                        outMessage.setId("2");
-                        messageArrayList.add(outMessage);
+                        final List<String> outputmessages = gsonOutput.getOutput().getText();
 
+                        System.out.println("outputmessages");
+                        System.out.println(outputmessages);
+
+                        for(int i = 0; i < outputmessages.size(); i++) {
+                            String outputmessage = outputmessages.get(i);
+                            Message outMessage=new Message();
+
+                            outMessage.setMessage(outputmessage);
+                            outMessage.setId("2");
+                            messageArrayList.add(outMessage);
+                        }
                     }
 
                     runOnUiThread(new Runnable() {

@@ -63,11 +63,11 @@ public class MenuItemsAdapter extends BaseAdapter {
 
         rowView = inflater.inflate(R.layout.list_item, null);
         //TODO: Disable this
-        if(position != 1) {
-            rowView.setEnabled(false);
-            rowView.setClickable(false);
-            rowView.setAlpha(0.5f);
-        }
+//        if(position != 1) {
+//            rowView.setEnabled(false);
+//            rowView.setClickable(false);
+//            rowView.setAlpha(0.5f);
+//        }
 
         holder.textView=(TextView) rowView.findViewById(R.id.textview);
         holder.imageView=(ImageView) rowView.findViewById(R.id.imageview);
@@ -82,22 +82,22 @@ public class MenuItemsAdapter extends BaseAdapter {
     // Menu Item List
     public List<MenuItem> getMenuItems() {
         ArrayList<MenuItem> items = new ArrayList<>();
+//        items.add(new MenuItem()
+//                        .setLabel("CASA")
+//                        .setIcon(R.drawable.png_home2280)
+//        );
         items.add(new MenuItem()
-                        .setLabel("CASA")
-                        .setIcon(R.drawable.png_home2280)
-        );
-        items.add(new MenuItem()
-                        .setLabel("SAÚDE")
-                        .setIcon(R.drawable.png_heart2570)
-        );
-        items.add(new MenuItem()
-                        .setLabel("CARRO")
+                        .setLabel("EMPRÉSTIMO E FINANCIAMENTO")
                         .setIcon(R.drawable.png_auo2321)
         );
-        items.add(new MenuItem()
-                        .setLabel("VIAGEM")
-                        .setIcon(R.drawable.png_travel2458)
-        );
+//        items.add(new MenuItem()
+//                        .setLabel("CARRO")
+//                        .setIcon(R.drawable.png_auo2321)
+//        );
+//        items.add(new MenuItem()
+//                        .setLabel("VIAGEM")
+//                        .setIcon(R.drawable.png_travel2458)
+//        );
         return items;
     }
 }

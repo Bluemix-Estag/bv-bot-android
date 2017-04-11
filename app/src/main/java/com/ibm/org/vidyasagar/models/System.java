@@ -13,7 +13,7 @@ public class System {
 
     @SerializedName("dialog_stack")
     @Expose
-    private List<String> dialogStack = null;
+    private List<DialogStack> dialogStack;
     @SerializedName("dialog_turn_counter")
     @Expose
     private Integer dialogTurnCounter;
@@ -21,11 +21,11 @@ public class System {
     @Expose
     private Integer dialogRequestCounter;
 
-    public List<String> getDialogStack() {
+    public List<DialogStack> getDialogStack() {
         return dialogStack;
     }
 
-    public void setDialogStack(List<String> dialogStack) {
+    public void setDialogStack(List<DialogStack> dialogStack) {
         this.dialogStack = dialogStack;
     }
 

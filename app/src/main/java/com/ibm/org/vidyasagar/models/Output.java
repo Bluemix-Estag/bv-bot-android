@@ -18,7 +18,7 @@ public class Output {
     private List<Object> logMessages = null;
     @SerializedName("text")
     @Expose
-    private String text;
+    private List<String> text = null;
     @SerializedName("nodes_visited")
     @Expose
     private List<String> nodesVisited = null;
@@ -31,11 +31,11 @@ public class Output {
         this.logMessages = logMessages;
     }
 
-    public String getText() {
+    public List<String> getText() {
         return text;
     }
 
-    public void setText(String text) {
+    public void setText(List<String> text) {
         this.text = text;
     }
 

@@ -22,7 +22,7 @@
         android:background="@drawable/bg_bubble_self"
         android:textIsSelectable="true"
         android:textSize="14dp"
-        android:textColor="@color/white"/>
+        android:textColor="@color/black"/>
 
 
 </LinearLayout>
